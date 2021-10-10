@@ -20,6 +20,71 @@ const promptUser = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Enter a description for your project (required)',
+            validate: descriptionInput => {
+                if (descriptionInput) {
+                    return true;
+                } else {
+                    console.log('Please enter a description for your project!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'install',
+            message: 'Enter installation instructions for your project',
+            validate: descriptionInput => {
+                if (descriptionInput) {
+                    return true;
+                } else {
+                    console.log('Please enter installation instructions for your project!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Provide instructions and examples for use',
+            validate: descriptionInput => {
+                if (descriptionInput) {
+                    return true;
+                } else {
+                    console.log('Please provide usage information!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'Provide instructions for other developers who wish to contribute to your project, or state otherwise',
+            validate: descriptionInput => {
+                if (descriptionInput) {
+                    return true;
+                } else {
+                    console.log('Please provide contribution instructions!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Provide instructions on how to run tests for your application',
+            validate: descriptionInput => {
+                if (descriptionInput) {
+                    return true;
+                } else {
+                    console.log('Please provide testing instructions!');
+                    return false;
+                }
+            }
         }
     ]);
 };

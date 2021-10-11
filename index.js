@@ -63,25 +63,37 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'contribution',
-            message: 'Provide instructions for other developers who wish to contribute to your project, or state otherwise',
-            validate: descriptionInput => {
-                if (descriptionInput) {
+            message: 'If you would like to, provide instructions for other developers who wish to contribute to your project',
+            default: ''
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'If you would like to, provide instructions for testing your application including examples of tests you have performed',
+            default: ''
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your github username?',
+            validate: githubInput => {
+                if (githubInput) {
                     return true;
                 } else {
-                    console.log('Please provide contribution instructions!');
+                    console.log('Please provide your github username!');
                     return false;
                 }
             }
         },
         {
             type: 'input',
-            name: 'tests',
-            message: 'Provide instructions on how to run tests for your application',
-            validate: descriptionInput => {
-                if (descriptionInput) {
+            name: 'email',
+            message: 'What is your email address?',
+            validate: emailInput => {
+                if (emailInput) {
                     return true;
                 } else {
-                    console.log('Please provide testing instructions!');
+                    console.log('Please provide your email!');
                     return false;
                 }
             }

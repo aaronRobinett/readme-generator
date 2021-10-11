@@ -1,3 +1,5 @@
+//uses fs to write README.md in the dist/ folder
+
 const fs = require('fs');
 
 const writeFile = fileContent => {

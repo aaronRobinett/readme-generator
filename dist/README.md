@@ -3,7 +3,7 @@
 
 ## Description
 
-It is a website that a user can visit to help find events and weather information for an upcoming vacation
+It is a website that a user can visit to help them see the weather and events for a future vacation.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -15,17 +15,17 @@ It is a website that a user can visit to help find events and weather informatio
 * [Questions](#questions)
 
 ## Installation
-You can clone the github reposiory and run index.html or visit the deployed github pages page
+The project can be downloaded from github or can be seen at the deployed github pages page
 
 ## Usage
-To use the site, enter where you would like to visit and what dates your vacation will be encompassing. Then press enter and see your results!
+The user will first enter the date range of their vacation and the city. Then after they hit enter the application will display the results
 
 ## Contributing
-Visit the github page and view open issues
+Visit the github page if you would like to contribute!
 
 
 ## Tests
-for testing info, visit the github page
+We have a tests folder on the github page 
 
 
 ## Questions

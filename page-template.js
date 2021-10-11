@@ -1,6 +1,5 @@
 // This will export a string of the page template to be turned into a README
-
-
+// contribution and test functions allow for user to skip those questions if desired.
 
 const contributionResponse = contribution => {
     if (!contribution) {
@@ -34,6 +33,7 @@ const testTable = test => {
     }
 }
 
+// function to take all user data and output the string that will become the markdown file
 module.exports = templateData => {
     const { title, description, install, usage, contribution, tests, github, email } = templateData;
 
